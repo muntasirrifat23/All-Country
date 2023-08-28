@@ -11,7 +11,7 @@ const Country = () => {
         <div className="w-full">
             <div className="text-center p-4 font-bold text-4xl" style={{ textDecoration: 'underline dotted' }}>Total Country: {countries.length}</div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 flex justify-center mt-10 mx-auto'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mx-20 gap-8 flex justify-center mt-10 mx-auto'>
                 {countries.map(country => (
                     <div key={country.name.common} className="mx-auto flex">
                         <div className="card card-compact w-full shadow-xl" style={{ backgroundColor: "#DCFFCA", color: "#222A22" }}>
