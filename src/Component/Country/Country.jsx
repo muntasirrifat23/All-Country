@@ -13,8 +13,8 @@ const Country = () => {
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 flex justify-center mt-10 mx-auto'>
                 {countries.map(country => (
-                    <div key={country.id} className="mx-auto flex">
-                        <div className="card card-compact w-full bg-lime-400 shadow-xl" style={{ backgroundColor: "#DCFFCA", color: "#222A22" }}>
+                    <div key={country.name.common} className="mx-auto flex">
+                        <div className="card card-compact w-full shadow-xl" style={{ backgroundColor: "#DCFFCA", color: "#222A22" }}>
                             <h2 className="underline font-bold text-2xl text-center">{country.name.common}</h2>
 
                             <figure><img className="rounded-3xl p-3" src={country.flags.png} alt="Shoes" /></figure>
